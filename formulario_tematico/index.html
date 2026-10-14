@@ -11,7 +11,7 @@
              <nav>
                 <a href="#sobre">Quem somos</a>
                 <a href="#servicos">O que oferecemos</a>
-                <a href="#contato">Inicie hoje!</a>
+                <a href="#agendamento">Inicie hoje!</a>
             </nav>
         </header>
         <hr>
@@ -44,6 +44,65 @@
                     <li>Aulas infantis</li>
                     <li>e muito mais...</li>
                 </ul>
+            </section id="agendamento">
+            <hr>
+            <h2>Agende sua aula esperimental agora!</h2>
+            <form>
+            <fieldset>
+                <legend><b>Informações de Contato</b></legend>
+                <label for="campo-nome">Nome Completo:</label>
+                    <br>
+                    <input type="text" name="nome_completo" id="campo-nome" placeholder="Informe seu nome" required size="40">
+                    <br>
+                     <label for="campo-email">Email Pessoal:</label>
+                    <br>
+                    <input type="email" name="email_pessoal" id="campo-email" placeholder="Informe seu e-mail" required size="40">
+                    <br>
+                    <label for="campo-telefone">Telefone Contato:</label>
+                    <br>
+                    <input type="tel" name="telefone_contato" id="campo-telefone" placeholder="Informe seu telefone" required>
+                    <br>                    
+            </fieldset>
+            <fieldset>
+                <legend><b>Agendamento</b></legend>
+                <select name="selecao_cursos" id="campo-curso" required>
+                            <option value="">-- Escolha a modalidade --</option>
+                            <option value="jiu-jitsu">Jiu-jitsu</option>
+                            <option value="kickboxing">Kickboxing</option>
+                            <option value="taekwondo">Taekwondo</option>
+                            <option value="wim-hof">Metódo Wim-Hof</option>
+                            <option value="hapkido">Hapkido</option>
+                            </select>
+                        <p><b>Selecione o turno da aula:</b></p>
+                        <input type="radio" name="turno-escolhido" id="campo-turno-manha" value="manha" cheked>
+                        <label for="campo-turno-manha">Turno da Manhã</label>
+                        <input type="radio" name="turno-escolhido" id="campo-turno-tarde" value="tarde">
+                        <label for="campo-turno-tarde">Turno da Tarde</label>
+                        <input type="radio" name="turno-escolhido" id="campo-turno-noite" value="noite">
+                        <label for="campo-turno-manha">Turno da Noite</label>
+                        <br>
+                        <p><b>Escolha a data da aula</b></p>
+                        <input type="date" name="data-aula" id="campo-data" required>
+                        <br><br>
+                        <label for="campo-observacao">Observaçôes ou Dúvidas</label>
+                        <br>
+                        <textarea name="observacoes_adcionais" id="campo-observacao" rows="4" cols="40" placeholder="Informe aqui alguma observação adicional"></textarea>
+                        <br>
+            </fieldset>
+            <br>
+                <button type="submit"><b>Confirmar meu cadastro</b></button>
+                <button type="reset"><b>Limpar Formulário</b></button>
+            </form>
+            <aside>
+                    <h4><b>Fale conosco!</b></h4>
+                    <p><b>WhatsApp / Fone</b></p>
+                    <p>(16) 99219-9393</p>
+                    <p><b>Nosso endereço</b></p>
+                    <p>R. Sebastião Sampaio Osório, 268 - Parque Elisio,</p>
+                    <p>São Geronimo - PR, 13563-320</p>
+                    <p><b>E-mail</b></p>
+                    <p>ironmartialartsd@gmail.com</p>
+                </aside>
             </section>
         </main>
     </body>
